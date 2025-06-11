@@ -18,7 +18,7 @@ struct ImageFromDiskGridView: View {
     ScrollView {
       Label("ImageFromDisk", systemImage: "3.circle")
 
-      LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
+      LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))]) {
         ForEach(albums, id: \.persistentID) { album in
           if let artObject = album.value(forKey: "artworkCatalog") as? NSObject,
              artObject.responds(to: selector),

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,10 @@
 		FC31A98E2C46B51D007CAD2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC31A98D2C46B51D007CAD2A /* Preview Assets.xcassets */; };
 		FC31A9972C46B565007CAD2A /* ArtworkImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31A9962C46B565007CAD2A /* ArtworkImageGridView.swift */; };
 		FC31A9992C46B56F007CAD2A /* ValueForPropGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31A9982C46B56F007CAD2A /* ValueForPropGridView.swift */; };
+		FC5453BD2DF8C3C700D03215 /* AlbumGridRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5453BC2DF8C3C700D03215 /* AlbumGridRepresentable.swift */; };
 		FC760EB62C46C1A900931AD5 /* ImageFromDiskGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC760EB52C46C1A900931AD5 /* ImageFromDiskGridView.swift */; };
+		FCC281262DFA39A50062963E /* AlbumThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC281252DFA39A50062963E /* AlbumThumbnailView.swift */; };
+		FCC281282DFA3A420062963E /* ValueForPropGridViewPlusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC281272DFA3A420062963E /* ValueForPropGridViewPlusModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +28,16 @@
 		FC31A98D2C46B51D007CAD2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC31A9962C46B565007CAD2A /* ArtworkImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkImageGridView.swift; sourceTree = "<group>"; };
 		FC31A9982C46B56F007CAD2A /* ValueForPropGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueForPropGridView.swift; sourceTree = "<group>"; };
+		FC5453BC2DF8C3C700D03215 /* AlbumGridRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumGridRepresentable.swift; sourceTree = "<group>"; };
 		FC760EB42C46BD2100931AD5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FC760EB52C46C1A900931AD5 /* ImageFromDiskGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFromDiskGridView.swift; sourceTree = "<group>"; };
+		FCC281252DFA39A50062963E /* AlbumThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumThumbnailView.swift; sourceTree = "<group>"; };
+		FCC281272DFA3A420062963E /* ValueForPropGridViewPlusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueForPropGridViewPlusModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FCC2811C2DFA37A40062963E /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC31A97F2C46B51C007CAD2A /* Frameworks */ = {
@@ -62,6 +72,8 @@
 			children = (
 				FC31A9852C46B51C007CAD2A /* MediaItemArtworkTestApp.swift */,
 				FC31A9872C46B51C007CAD2A /* ContentView.swift */,
+				FCC281252DFA39A50062963E /* AlbumThumbnailView.swift */,
+				FCC2811C2DFA37A40062963E /* Models */,
 				FC760EB72C46C3FB00931AD5 /* Screens */,
 				FC31A9892C46B51D007CAD2A /* Assets.xcassets */,
 				FC31A98B2C46B51D007CAD2A /* MediaItemArtworkTest.entitlements */,
@@ -83,7 +95,9 @@
 			children = (
 				FC31A9962C46B565007CAD2A /* ArtworkImageGridView.swift */,
 				FC31A9982C46B56F007CAD2A /* ValueForPropGridView.swift */,
+				FCC281272DFA3A420062963E /* ValueForPropGridViewPlusModel.swift */,
 				FC760EB52C46C1A900931AD5 /* ImageFromDiskGridView.swift */,
+				FC5453BC2DF8C3C700D03215 /* AlbumGridRepresentable.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -102,6 +116,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FCC2811C2DFA37A40062963E /* Models */,
 			);
 			name = MediaItemArtworkTest;
 			productName = MediaItemArtworkTest;
@@ -159,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC31A9882C46B51C007CAD2A /* ContentView.swift in Sources */,
+				FCC281282DFA3A420062963E /* ValueForPropGridViewPlusModel.swift in Sources */,
 				FC31A9862C46B51C007CAD2A /* MediaItemArtworkTestApp.swift in Sources */,
+				FC5453BD2DF8C3C700D03215 /* AlbumGridRepresentable.swift in Sources */,
 				FC31A9992C46B56F007CAD2A /* ValueForPropGridView.swift in Sources */,
+				FCC281262DFA39A50062963E /* AlbumThumbnailView.swift in Sources */,
 				FC31A9972C46B565007CAD2A /* ArtworkImageGridView.swift in Sources */,
 				FC760EB62C46C1A900931AD5 /* ImageFromDiskGridView.swift in Sources */,
 			);
